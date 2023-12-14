@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Cta({ cta }) {
+  console.log(cta)
+
   return (
     <section className="section px-4">
       <div className="section container rounded-xl shadow">

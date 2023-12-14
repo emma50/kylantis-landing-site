@@ -17,13 +17,18 @@ const Logo = ({ src }) => {
       }}
     >
       {src || logo ? (
-        <Image
-          width={logo_width.replace("px", "") * 2}
-          height={logo_height.replace("px", "") * 2}
-          src={src ? src : logo}
-          alt={title}
-          priority
-        />
+        <div className="flex gap-3 pt-1">
+          <Image
+            // width={logo_width.replace("px", "") * 2}
+            // height={logo_height.replace("px", "") * 2}
+            width={30}
+            height={30}
+            src={src ? src : logo}
+            alt={title}
+            priority
+          />
+           <span className="self-center font-medium">Kylantis</span>
+        </div>
       ) : logo_text ? (
         logo_text
       ) : (

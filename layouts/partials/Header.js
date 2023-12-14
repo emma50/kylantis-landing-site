@@ -24,7 +24,8 @@ const Header = () => {
       <nav className="navbar container">
         {/* logo */}
         <div className="order-0">
-          <Logo src={logo} />
+          {/* <Logo src={logo} /> */}
+          <Logo src={'/images/kylantis/kylantis-favicon.webp'}/>
         </div>
 
         {/* navbar toggler */}
@@ -85,7 +86,7 @@ const Header = () => {
                     <Link
                       href={menu.url}
                       onClick={() => setNavOpen(false)}
-                      className={`nav-link block ${
+                      className={`nav-link block font-medium ${
                         router.asPath === menu.url ? "nav-link-active" : ""
                       }`}
                     >

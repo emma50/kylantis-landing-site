@@ -33,12 +33,18 @@ const Footer = () => {
           {/* social icons */}
           <div className="md-12 sm:col-6 lg:col-3">
             <Link href="/" aria-label="Bigspring">
-              <Image
-                src={config.site.logo}
-                width={config.site.logo_width}
-                height={config.site.logo_height}
-                alt=""
-              />
+              <div className="flex gap-3 pt-1">
+                <Image
+                  src={'/images/kylantis/kylantis-favicon.webp'}
+                  width={30}
+                  height={30}
+                  // src={config.site.logo}
+                  // width={config.site.logo_width}
+                  // height={config.site.logo_height}
+                  alt=""
+                />
+                <span className="self-center font-medium">Kylantis</span>
+              </div>
             </Link>
             {markdownify(footer_content, "p", "mt-3 mb-6")}
             <Social source={social} className="social-icons mb-8" />
@@ -46,7 +52,8 @@ const Footer = () => {
         </div>
         {/* copyright */}
         <div className="border-t border-border py-6">
-          {markdownify(copyright, "p", "text-sm text-center")}
+          {/* {markdownify(copyright, "p", "text-sm text-center")} */}
+          <p className="text-sm text-center">&#169; Compute Essentials, LLC</p>
         </div>
       </div>
     </footer>

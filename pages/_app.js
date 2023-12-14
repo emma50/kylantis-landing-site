@@ -3,6 +3,8 @@ import theme from "@config/theme.json";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import TagManager from "react-gtm-module";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "styles/style.scss";
 
 const App = ({ Component, pageProps }) => {
@@ -53,6 +55,18 @@ const App = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
       </Head>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <Component {...pageProps} />
     </>
   );

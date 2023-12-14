@@ -20,8 +20,10 @@ const Home = ({ frontmatter }) => {
         <div className="container">
           <div className="row text-center">
             <div className="mx-auto lg:col-10">
-              <h1 className="font-primary font-bold">{banner.title}</h1>
-              <p className="mt-4">{markdownify(banner.content)}</p>
+              {/* <h1 className="font-primary font-bold">{banner.title}</h1> */}
+              <h1 className="font-primary font-bold">The future of Enterprise Software Delivery</h1>
+              {/* <p className="mt-4">{markdownify(banner.content)}</p> */}
+              <p className="mt-4">The Kylantis Enterprise App Marketplace is a great place to find and run on-demand business apps for your organisation - or your next big project. It will offer the most comprehensive list of apps</p>
               {banner.button.enable && (
                 <Link
                   className="btn btn-primary mt-4"
